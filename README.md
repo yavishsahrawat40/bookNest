@@ -10,7 +10,6 @@
 - [Authentication](#authentication)
 - [User Interface](#user-interface)
 - [Future Enhancements](#future-enhancements)
-- [License](#license)
 - [Contributors](#contributors)
 - [Acknowledgements](#acknowledgements)
 
@@ -53,7 +52,7 @@ BOOKNEST is a comprehensive online bookstore that allows users to browse, purcha
 ### Backend
    node index.js
 ## API Documentation
-# Endpoints
+### Endpoints
 **User Registration**
  -POST /api/users/register
  -Request: { "email": "example@example.com", "password": "password123" }
@@ -107,8 +106,6 @@ Token is included in the headers of subsequent requests for authentication.
  -Implement real payment gateway integration.
  -Improve UI/UX with more responsive design elements.
  -Add more detailed book descriptions and reviews.
-## License
--This project is licensed under the MIT License - see the LICENSE file for details.
 ## Contributors
  -Sanjay 
  -Yavish 
