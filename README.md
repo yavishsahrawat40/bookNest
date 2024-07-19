@@ -38,14 +38,14 @@ BOOKNEST is a comprehensive online bookstore that allows users to browse, purcha
 1. Clone the repository.
 2. Install dependencies for the backend:
    
-   cd backend
-   npm i
-   node index.js
+   - cd backend
+   - npm i
+   - node index.js
 3. Install dependencies for the frontend:
 
-   cd frontend
-   npm i
-   npm run dev
+   - cd frontend
+   - npm i
+   - npm run dev
 ## Running the Application
 ### Frontend
    npm run dev
@@ -53,43 +53,43 @@ BOOKNEST is a comprehensive online bookstore that allows users to browse, purcha
    node index.js
 ## API Documentation
 ### Endpoints
-**User Registration**
+- **User Registration**
  - POST /api/users/register
  - Request: { "email": "example@example.com", "password": "password123" }
  - Response: 200 OK
-**User Login**
+- **User Login**
  - POST /api/users/login
  - Request: { "email": "example@example.com", "password": "password123" }
  - Response: 200 OK
-**Seller Registration**
+- **Seller Registration**
  - POST /api/sellers/register
  - Request: { "shopName": "Example Shop", "email": "example@example.com", "password": "password123" }
  - Response: 200 OK
-**Admin Login**
+- **Admin Login**
  - POST /api/admin/login
  - Request: { "email": "admin@example.com", "password": "admin123" }
  - Response: 200 OK
-**Get Books**
+- **Get Books**
  - GET /api/books
  - Response: 200 OK { "books": [...] }
-**Add Book (Seller/Admin)**
+- **Add Book (Seller/Admin)**
  - POST /api/books
  - Request: { "title": "Book Title", "author": "Author Name", "genre": "Fiction", "price": 19.99 }
  - Response: 201 Created
-**Order Book**
+- **Order Book**
  - POST /api/orders
  - Request: { "userId": "123", "bookId": "456", "address": "User Address" }
  - Response: 200 OK { "message": "Order placed" }
-**Get Orders (User)**
+- **Get Orders (User)**
  - GET /api/orders/user/:userId
  - Response: 200 OK { "orders": [...] }
-**Get Orders (Seller)**
+- **Get Orders (Seller)**
  - GET /api/orders/seller/:sellerId
  - Response: 200 OK { "orders": [...] }
-**Get Orders (Admin)**
+- **Get Orders (Admin)**
  - GET /api/orders
  - Response: 200 OK { "orders": [...] }
-**Delete Book (Seller/Admin)**
+- **Delete Book (Seller/Admin)**
  - DELETE /api/books/:bookId
  - Response: 200 OK { "message": "Book deleted" }
 ## Authentication
