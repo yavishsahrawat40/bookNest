@@ -54,44 +54,44 @@ BOOKNEST is a comprehensive online bookstore that allows users to browse, purcha
 ## API Documentation
 ### Endpoints
 **User Registration**
- -POST /api/users/register
- -Request: { "email": "example@example.com", "password": "password123" }
- -Response: 200 OK
+ - POST /api/users/register
+ - Request: { "email": "example@example.com", "password": "password123" }
+ - Response: 200 OK
 **User Login**
- -POST /api/users/login
- -Request: { "email": "example@example.com", "password": "password123" }
- -Response: 200 OK
+ - POST /api/users/login
+ - Request: { "email": "example@example.com", "password": "password123" }
+ - Response: 200 OK
 **Seller Registration**
- -POST /api/sellers/register
- -Request: { "shopName": "Example Shop", "email": "example@example.com", "password": "password123" }
- -Response: 200 OK
+ - POST /api/sellers/register
+ - Request: { "shopName": "Example Shop", "email": "example@example.com", "password": "password123" }
+ - Response: 200 OK
 **Admin Login**
- -POST /api/admin/login
- -Request: { "email": "admin@example.com", "password": "admin123" }
- -Response: 200 OK
+ - POST /api/admin/login
+ - Request: { "email": "admin@example.com", "password": "admin123" }
+ - Response: 200 OK
 **Get Books**
- -GET /api/books
- -Response: 200 OK { "books": [...] }
+ - GET /api/books
+ - Response: 200 OK { "books": [...] }
 **Add Book (Seller/Admin)**
- -POST /api/books
- -Request: { "title": "Book Title", "author": "Author Name", "genre": "Fiction", "price": 19.99 }
- -Response: 201 Created
+ - POST /api/books
+ - Request: { "title": "Book Title", "author": "Author Name", "genre": "Fiction", "price": 19.99 }
+ - Response: 201 Created
 **Order Book**
- -POST /api/orders
- -Request: { "userId": "123", "bookId": "456", "address": "User Address" }
- -Response: 200 OK { "message": "Order placed" }
+ - POST /api/orders
+ - Request: { "userId": "123", "bookId": "456", "address": "User Address" }
+ - Response: 200 OK { "message": "Order placed" }
 **Get Orders (User)**
- -GET /api/orders/user/:userId
- -Response: 200 OK { "orders": [...] }
+ - GET /api/orders/user/:userId
+ - Response: 200 OK { "orders": [...] }
 **Get Orders (Seller)**
- -GET /api/orders/seller/:sellerId
- -Response: 200 OK { "orders": [...] }
+ - GET /api/orders/seller/:sellerId
+ - Response: 200 OK { "orders": [...] }
 **Get Orders (Admin)**
- -GET /api/orders
- -Response: 200 OK { "orders": [...] }
+ - GET /api/orders
+ - Response: 200 OK { "orders": [...] }
 **Delete Book (Seller/Admin)**
- -DELETE /api/books/:bookId
- -Response: 200 OK { "message": "Book deleted" }
+ - DELETE /api/books/:bookId
+ - Response: 200 OK { "message": "Book deleted" }
 ## Authentication
 **Method:** JSON Web Tokens (JWT) for securing user sessions.
 **Process:**
@@ -103,13 +103,13 @@ Token is included in the headers of subsequent requests for authentication.
 ![image](https://github.com/user-attachments/assets/b8a3cd1d-19ec-4f87-a6d2-2cb575304c71)
 ![image](https://github.com/user-attachments/assets/b1a09e73-dda4-4cee-befb-631cdb4709a7)
 ## Future Enhancements
- -Implement real payment gateway integration.
- -Improve UI/UX with more responsive design elements.
- -Add more detailed book descriptions and reviews.
+ - Implement real payment gateway integration.
+ - Improve UI/UX with more responsive design elements.
+ - Add more detailed book descriptions and reviews.
 ## Contributors
- -Sanjay 
- -Yavish 
- -Preetham 
- -Nageswara Rao 
+ - Sanjay 
+ - Yavish 
+ - Preetham 
+ - Nageswara Rao 
 ## Acknowledgements
- -Special thanks to everyone who contributed to the development and testing of this project.
+ - Special thanks to everyone who contributed to the development and testing of this project.
