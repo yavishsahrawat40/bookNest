@@ -1,0 +1,27 @@
+.HeroImage{
+    height: 300px;
+    width: 80vw;
+    background-image: url('./Hero.jpg');
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    
+}
+.Hero{
+    margin-left: 170px;
+    
+}
+
+.Description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 50vw;
+    color: white;
+    background-color: black;
+    font-size: 17px;
+    margin-left: 100px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
